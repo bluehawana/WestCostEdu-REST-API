@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  padding: 2rem 0;
+}
+h1 {
+  color: whitesmoke;
+  font-size: xx-large;
+  font-weight: 400;
+  font-style: italic;
+}
+
+main,
+header {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.info-details {
+  color: rgb(128, 0, 0);
+  background-color: lightblue;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #444;
+  color: #fff;
+}
+
+.container {
+  margin: auto;
+  max-width: 900px;
+  padding-top: 75px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  background: #0077B5;
+  opacity: 0.9;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4.5rem;
+  padding: 0 2rem;
+  z-index: 2;
+}
+
+#navbar a {
+  color: #fff;
+  padding: 0.8rem 0.5rem;
+  margin-right: 0.4rem;
+  font-size: 1.2rem;
+}
+
+#navbar ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.active {
+  border-bottom: #2196f3 solid 2px;
+}
+
+#navbar .logo {
+  font-weight: 400;
+}
+
+#main-image {
+  background: url('../img/Westcoast-1.jpg') center center/cover no-repeat;
+  height: 600px;
+  text-align: center;
+  padding-top: 200px;
+  opacity: 0.9;
+}
+
+#main-image h1 {
+  color: #fff;
+  font-weight: 700;
+}
+
+.article {
+  color: #333;
+  text-align: center;
+  margin: 40px;
+}
+
+.article p {
+  max-width: 400px;
+  margin: auto;
+  text-align: left;
+}

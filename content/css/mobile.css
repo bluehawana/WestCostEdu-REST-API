@@ -1,0 +1,24 @@
+nav {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 130px;
+  }
+  
+  nav a {
+    padding: 0.7rem;
+  }
+  
+  .container {
+    flex-direction: column;
+  }
+  
+  .box {
+    width: 100%;
+    padding: 3rem;
+  }
+  
+  .our-courses {
+    margin: 9rem 0 0 0;
+  }
+  

@@ -1,0 +1,136 @@
+body {
+  background: #333 url('../img/dell.jpg') no-repeat center
+  center/cover;
+color: #fff;
+text-align: center;
+padding: 0;
+padding-top: 0vh;
+height: 100vh;
+}
+
+.courses-wrapper {
+  display: grid;
+  align-items: stretch;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.courses-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: darkgrey;
+  border: #888 solid 1px;
+  border-radius: 10px;
+  padding: 0 1rem 1rem 1rem;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+}
+.courses-card p {
+  text-align: center;
+}
+
+.courses-card img {
+  width: 100%;
+}
+
+.search {
+  display: flex;
+  width: 100%;
+  position: relative;
+  padding: 0 2rem;
+}
+
+.search-input {
+  max-width: 200px;
+  border: 1px solid #888;
+  border-right: none;
+  padding: 5px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.search-button {
+  width: 30px;
+  border: 1px solid #888;
+  background-color: #888;
+  color: #f4f4f4;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+}
+
+.modal {
+  position:sticky;
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+  max-width: 40rem;
+  width: 100%;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.5);
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-container {
+  margin: 2rem;
+}
+
+.modal-container img {
+  width: 80%;
+  height:80%
+}
+
+.close-modal {
+  position: absolute;
+  top: 0;
+  right: 6px;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 500px) {
+  .courses-wrapper {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+  }
+
+  .courses-card {
+    margin: auto;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  .courses-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .courses-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

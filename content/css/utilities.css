@@ -1,0 +1,80 @@
+/* Utilities */
+:root {
+  --primary-color: #2196f3;
+  --secondary-color: #00796b;
+  --dark-color: #212121;
+  --light-color: #f4f4f4;
+  --background-color: #4e4d4d;
+  --background-highlight-color: #6b6b6b;
+  --active-color: #f7c08a;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  color: #fff;
+  background-color: var(--dark-color);
+  font-size: 18px;
+  padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn:hover {
+  background: #f7c08a;
+  color: var(--dark-color);
+}
+
+.btn-primary,
+.bg-primary {
+  background-color: #f7c08a;
+  color: var(--dark-color);
+}
+
+.btn-light {
+  background: #f4f4f4;
+  color: var(--dark-color);
+}
+
+.bg-dark {
+  background: #333;
+  color: #f4f4f4;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: var(--dark-color);
+}
+
+.btn-secondary,
+.bg-secondary {
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.card {
+  border: solid 1px #444;
+  margin: 30px;
+  padding: 20px;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h4 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card p {
+  text-align: center;
+}
