@@ -13,19 +13,18 @@ const createHtml = (course) => {
       <img src="${course.imageUrl}" id="${course.id}" width="400" height="600" />
       <p>StartDate ${course.startDate} --- EndDate ${course.endDate}</p>
       <p>BookEdition ${course.bookEdition} | Price kr ${course.price}</p>
+      <bottom description="${course.description}" class="btn">More info</bottom>
     </div>`
   );
 };
 
-const loadImages = () => {
-  const images = document.querySelectorAll(".courses-card img");
+const loadBottoms = () => {
+  const bottoms = document.querySelectorAll(".courses-card bottom");
 
-  images.forEach((image) => {
-    let src = image.getAttribute("src");
-    let id = image.getAttribute("id");
-
-    image.addEventListener("click", () => {
-      openModal(src, id);
+  bottoms.forEach((bottom) => {
+    let description = bottom.getAttribute("description");
+    bottom.addEventListener("click", () => {
+      openModal(description);
     });
   });
 };
@@ -34,7 +33,7 @@ const getCourses = () => {
   courses.forEach((course) => {
     createHtml(course);
   });
-  loadImages();
+  loadBottoms();
 };
 
 const findCourses = () => {
@@ -54,11 +53,9 @@ const findCourses = () => {
   found.forEach((course) => createHtml(course));
 };
 
-const openModal = (imageSrc, id) => {
-  const image = modalDialog.querySelector(".modal-container");
-  image.innerHTML = `<img src=${imageSrc}/>
-  <a class="btn" href="course-detail.html?coursesId=${id}">More information</a>`;
-
+const openModal = (e) => {
+  const description = modalDialog.querySelector(".modal-container");
+  description.innerHTML = `<a>${e}</a>`;
   modalDialog.classList.remove("hidden");
   overlay.classList.remove("hidden");
 };

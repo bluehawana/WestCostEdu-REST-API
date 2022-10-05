@@ -1,11 +1,10 @@
 body {
-  background: #333 url('../img/dell.jpg') no-repeat center
-  center/cover;
-color: #fff;
-text-align: center;
-padding: 0;
-padding-top: 0vh;
-height: 100vh;
+  background: #333 url("../img/dell.jpg") no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 0;
+  padding-top: 0vh;
+  height: 100vh;
 }
 
 .courses-wrapper {
@@ -66,16 +65,17 @@ height: 100vh;
 }
 
 .modal {
-  position:sticky;
+  position: fixed;
   top: 50%;
   left: 50%;
   border-radius: 10px;
-  background-color: #f3f3f3;
+  background-color: rgb(45, 150, 185);
   max-width: 40rem;
+  height: 10rem;
   width: 100%;
   box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.5);
   transform: translate(-50%, -50%);
-  z-index: 3;
+  z-index: 1;
 }
 
 .hidden {
@@ -83,12 +83,12 @@ height: 100vh;
 }
 
 .modal-container {
-  margin: 2rem;
+  text-align: center;
+  margin: 1.5rem;
 }
 
-.modal-container img {
-  width: 80%;
-  height:80%
+.modal-container a {
+  color: var(--color-primary);
 }
 
 .close-modal {
